@@ -1,0 +1,26 @@
+#headerOne{
+    align-items: center;
+}
+
+
+#mainContainer{
+    border: solid red;
+    height: 42vh;
+    float: left;
+    width: 42vh;
+}
+#secondContainer{
+    border: solid orange;
+    height: 42vh;
+    float: right;
+    width: 42vh;
+}
+
+#zombieContainer{
+    border: solid green;
+    margin: auto;
+    width: 45%;
+    padding: 10px;
+    height: 42vh;
+
+}
