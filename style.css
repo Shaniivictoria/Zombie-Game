@@ -2,7 +2,11 @@
     align-items: center;
 }
 
-
+.bigContainer{
+    display: flex;
+    justify-content: center;
+    
+}
 #mainContainer{
     border: solid red;
     height: 42vh;
@@ -16,11 +20,76 @@
     width: 42vh;
 }
 
+
 #zombieContainer{
     border: solid green;
-    margin: auto;
-    width: 45%;
-    padding: 10px;
+   margin: auto;
+    /*padding: 10px;
     height: 42vh;
+    width: 100%;*/
+    background-color: black;
+    height: 600px;
+    width: 800px;
+    position: relative;
 
+}
+
+.gamePoints{
+    border:solid black;
+        width:100%
+}
+
+.healthBarContainer{
+    display: flex;
+}
+
+.timer{
+    width:20%;
+    text-align:center;
+    font-size:42px;
+     border:solid blue; 
+    padding-top:15px;
+}
+
+/*#playerOne, #playerTwo{
+    border: solid purple;
+    width: 40%;
+    height: 30px; */
+
+
+#player2{
+    height: 30px;
+    width: 30px;
+    align-items: center;
+}
+
+.zombie.dead{
+    background-color: red;
+    height: 50px;
+   
+}
+
+.zombie{
+    width: 150px;
+    height: 400px;
+    position: absolute;
+    background-color: beige;
+    bottom: -400px;
+   
+}
+
+#zombieOne{
+    left: 165px;
+}
+
+#zombieTWo{
+    left: 325px;
+}
+
+#zombieThree{
+    left: 485px;
+}
+
+#zombieFour{
+    left: 645px;
 }
