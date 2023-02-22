@@ -4,11 +4,15 @@
 
     player1:{
         health: 5,
-        
 
+
+
+    },
+    player2:{
+        health: 5,
+     
 
     }
-
 
 
 
