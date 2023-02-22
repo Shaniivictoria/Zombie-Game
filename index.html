@@ -11,24 +11,26 @@
     </head>
     <body>
          <h1 class="headerOne">Zombie Paint</h1>
-
+        <div class="bigContainer">
        <div id="mainContainer">
             <div id="playerOne"></div>
        </div>
 
+       <div id="zombieContainer">
+         <div class="zombie" id="zombieOne" onclick="shoot (this)"></div>
+         <div class="zombie" id="zombieTwo" onclick="shoot (this)"></div>
+         <div class="zombie" id="zombieThree"onclick="shoot (this)"></div>
+         <div class="zombie" id="zombieFour"onclick="shoot (this)"></div>
+     </div>
+
        <div id="secondContainer">
-       <div id="playerTwo"></div>
+       <div id="playerTwo">
+        <!--<img class="image2" src="/player2.gif" alt=""> -->
+       </div>
        </div>
 
-       <div id="zombieContainer"></div>
-        <div id="zombieOne"></div>
-        <div id="zombieTwo"></div>
-        <div id="zombieThree"></div>
-        <div id="zombieFour"></div>
-
-
-
-
+      
+</div>
         <!-- This is where the points will be held-->
 
         <div class="gamePoints">
@@ -49,6 +51,10 @@
                 </div>
                 </div>
               
+
+                <p style="text-align: center;">
+                    <button onclick="randomZombieAttacks()">NEW GAME</button>
+                  </p>	
               
 
         <script src="main.js" async defer></script>
