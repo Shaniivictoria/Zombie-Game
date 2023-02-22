@@ -14,31 +14,24 @@
 
     }
 
-
-
-
-
         }
-    
 
-//create 4 zoombies 
+//Shooting function//
 
+function shoot(zombie){
+//alert("boom!"); -- this function works, going to keep for reminder//
+zombie.classList.add("dead");
 
-//player one gets paint gun (blue)
+}
 
-//player one aims at zoombie and throw paint on zoombie
+//zoombie attacking me//
+function zombieAttacksMe(zombie){
+    zombie.classList.add ("showing");
+    setTimeout(  ()=> {
+        zombie.classList.remove("showing")
+    }, 3000);
 
-//zoombie melts (steam comes up)
+    }
 
-//player two gets pain gun (red)
-
-//player two aims at zoombies and throws paint 
-
-// zoombie melts 
-
-
-
-
-//round one = 1300 point 
-//onclick = paint spattered. 
-
+    var zombie = document.querySelector("#zombie1")
+    zombieAttacksMe(zombie1);
