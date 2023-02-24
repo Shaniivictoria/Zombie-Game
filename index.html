@@ -1,61 +1,38 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Zombie Game</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-         <h1 class="headerOne">Zombie Paint</h1>
-        <div class="bigContainer">
-       <div id="mainContainer">
-            <div id="playerOne"></div>
-       </div>
+ <head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>Zombie Game</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="style.css">
+</head>
 
-       <div id="zombieContainer">
-         <div class="zombie" id="zombieOne" onclick="shoot (this)"></div>
-         <div class="zombie" id="zombieTwo" onclick="shoot (this)"></div>
-         <div class="zombie" id="zombieThree"onclick="shoot (this)"></div>
-         <div class="zombie" id="zombieFour"onclick="shoot (this)"></div>
-     </div>
+<body> 
+  <h1 class="glow" id="">WANT TO PLAY</h1>
 
-       <div id="secondContainer">
-       <div id="playerTwo">
-        <!--<img class="image2" src="/player2.gif" alt=""> -->
-       </div>
-       </div>
+  <main id="gameFrame" class="roundOne" onclick="myShootingEffects()"></main>
 
-      
+
+ <div id="zombieContainer">
+  <div class="zombie" id="zombieOne" onclick="shoot (this)"></div>
+  <div class="zombie" id="zombieTwo" onclick="shoot (this)"></div>
+  <div class="zombie" id="zombieThree"onclick="shoot (this)"></div>
+  <div class="zombie" id="zombieFour"onclick="shoot (this)"></div>
 </div>
-        <!-- This is where the points will be held-->
+           
+<!--<button onclick="newGame()" id="newGame">
+<span class="winPopup">You WIN</span>
+<span class="loosePopup">You LOST</span>
+<span class="welcomeMessage">Kill the Zoombies</span>
 
-        <div class="gamePoints">
-        <div class="healthBarContainer">
-            <div class="playerOneLife">
-                <div class="life"></div>
-                <div class="life"></div>
-                <div class="life"></div>
-                <div class="life"></div>
-                </div>
-              <div class="timer">00</div>
+<p>New Game</p>
 
-              <div class="playerTwoLife">
-                <div class="life"></div>
-                <div class="life"></div>
-                <div class="life"></div>
-                <div class="life"></div>
-                </div>
-                </div>
+</button> -->
               
-
-                <p style="text-align: center;">
-                    <button onclick="randomZombieAttacks()">NEW GAME</button>
-                  </p>	
-              
+</main>
 
         <script src="main.js" async defer></script>
     </body>
