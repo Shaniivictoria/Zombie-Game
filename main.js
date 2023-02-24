@@ -19,6 +19,11 @@ setInterval(() => {
 
 }, 1000);
 
+function shoot(zombie){
+    alert("GOT CHA");
+}
+
+
 
 let score = 0;
 
