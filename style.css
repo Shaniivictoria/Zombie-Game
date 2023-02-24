@@ -1,95 +1,52 @@
-#headerOne{
-    align-items: center;
-}
-
-.bigContainer{
-    display: flex;
-    justify-content: center;
+.glow {
+    font-size: 80px;
+    color: #fff;
+    text-align: center;
+    animation: glow 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
     
-}
-#mainContainer{
-    border: solid red;
-    height: 42vh;
-    float: left;
-    width: 42vh;
-}
-#secondContainer{
-    border: solid orange;
-    height: 42vh;
-    float: right;
-    width: 42vh;
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-
-#zombieContainer{
-    border: solid green;
-   margin: auto;
-    /*padding: 10px;
-    height: 42vh;
-    width: 100%;*/
-    background-color: black;
-    height: 600px;
-    width: 800px;
-    position: relative;
-
+body{
+    background-color: #5b2d80;
 }
 
-.gamePoints{
-    border:solid black;
-        width:100%
+#gameFrame {
+	height: 600px;
+	width: 800px;
+	margin: auto;
+	overflow: hidden;
+	position: relative;
+	background-color: #331667;
+}
+#gameFrame.ennemyShooting {
+	background-color: brown;
+}		
+
+#gameFrame.playerShooting {
+	background-color: white;
 }
 
-.healthBarContainer{
-    display: flex;
-}
 
-.timer{
-    width:20%;
-    text-align:center;
-    font-size:42px;
-     border:solid blue; 
-    padding-top:15px;
-}
-
-/*#playerOne, #playerTwo{
-    border: solid purple;
-    width: 40%;
-    height: 30px; */
-
-
-#player2{
-    height: 30px;
-    width: 30px;
-    align-items: center;
-}
-
-.zombie.dead{
-    background-color: red;
-    height: 50px;
-   
-}
-
-.zombie{
-    width: 150px;
-    height: 400px;
-    position: absolute;
-    background-color: beige;
-    bottom: -400px;
-   
-}
-
-#zombieOne{
-    left: 165px;
-}
-
-#zombieTWo{
-    left: 325px;
-}
-
-#zombieThree{
-    left: 485px;
-}
-
-#zombieFour{
-    left: 645px;
+#gameFrame {
+	font-weight: bold;
+	cursor: crosshair;
+	user-select: none;
+	border-radius: 10px;
+	color: coral;
+	box-shadow: inset 0 -200px 50px #81a2a740, inset 0 100px 80px #11111140;	
 }
