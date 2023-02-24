@@ -5,7 +5,7 @@
     animation: glow 1s ease-in-out infinite alternate;
   }
   
-  @-webkit-keyframes glow {
+  @keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
     }
@@ -23,6 +23,7 @@
 
 body{
     background-color: #5b2d80;
+    text-align: center;
 }
 
 #gameFrame {
@@ -33,14 +34,6 @@ body{
 	position: relative;
 	background-color: #331667;
 }
-#gameFrame.ennemyShooting {
-	background-color: brown;
-}		
-
-#gameFrame.playerShooting {
-	background-color: white;
-}
-
 
 #gameFrame {
 	font-weight: bold;
@@ -49,4 +42,150 @@ body{
 	border-radius: 10px;
 	color: coral;
 	box-shadow: inset 0 -200px 50px #81a2a740, inset 0 100px 80px #11111140;	
+}
+
+#gameFrame.zombieShooting {
+	background-color: brown;
+}		
+
+#gameFrame.playerShooting {
+	background-color: white;
+}
+
+
+
+
+/* This is the Health Bar
+
+#healthBar {
+	background-color: coral;
+	height: 20px;
+	position: relative;
+	left: 0%;
+	width: 20%;
+}
+
+#healthBar{
+    transition:  width .4s;
+}
+*/
+
+
+
+/*************Styling the Zombie :) *********************/
+
+.zombie{
+    background-color: #75bc63;
+	position: absolute; 
+	height: 400px;
+	width: 150px;
+	transition: all .5s;
+    z-index: 10;
+    right:  400px;
+}
+
+.zombie {
+	border-top: 80px solid  #f96eb3;
+	border-bottom: 150px solid  #1c3331;
+	border-radius: 30px;
+	box-shadow: 0 -1px 14px #ffffff5c, inset 0 32px 15px rgba(0, 0, 0, .3);
+}
+
+
+/* Ennemy's face and hat */
+.zombie:before {
+	content: "°_°";
+	padding-top: .20em;
+	text-align: center;
+	width: 130%;
+	left: -15%;
+	border-top: 10px solid  #d83a6f;
+    box-shadow: -3.75em; 
+	position: absolute;
+	font-size: 100px;
+}
+
+/* Ennemy weapon */
+.zombie:after {
+    content: "°";
+    color: orange;
+    position: absolute;
+    bottom: -50px;
+    left: -32px;
+    font-size: 80px;
+    background-color: #0e211f;
+    border-radius: 16px;
+    border-left: 6px solid  #232323;
+    border-bottom: 12px solid  #121212;
+    box-sizing: border-box;
+    line-height: .5em;
+    width: 52px;
+    text-align: center;
+    padding-top: 17px;
+    transition: all .2s;
+}
+
+
+.zombie.dead {
+	filter: blur(2px) brightness(.5);	
+}
+
+/* Ennemy's dead face */
+.zombie.dead:before {
+	content: "*_*";
+}
+
+
+/* css functions */
+
+.zombie.showing {
+	bottom: -10%;
+}
+
+.zombie.shooting {
+	background-color: #2D1810;
+}
+
+.zombie .dead {
+	transform: rotate(-90deg);
+	transform-origin: bottom left;
+	bottom: -13%;
+	background-color: white;
+	margin-left: 20%;
+}
+
+
+.zombie:nth-child(1){
+    left: 100px;
+    margin-right: 30px;
+}
+
+.zombie:nth-child(2){
+    left: 280px;
+    margin-right: 30px;
+}
+
+.zombie:nth-child(3){
+    left: 430px;
+    margin-right: 30px;
+}
+
+.zombie:nth-child(4){
+    left: 580px;
+    margin-right: 30px;
+}
+
+
+
+
+
+.button{
+    color: white;
+    background: transparent;
+    border: 2px soild white;
+    padding: 15px 45px;
+    font-size: 1.1rem;
+    outline: none;
+   
+
 }
