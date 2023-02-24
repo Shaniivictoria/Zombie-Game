@@ -1,37 +1,28 @@
-// create two player 
-    currentPlayer = ""
-        let characters = {
+const gameFrame = document.querySelector("#gameFrame");
+const button = document.querySelector(".button");
 
-    player1:{
-        health: 5,
-
+const zombies = document.createElement("zombie");
+zombies.setAttribute("class", zombies);
 
 
-    },
-    player2:{
-        health: 5,
-     
 
-    }
+const gameFrameHeight = gameFrame.offsetHeight;
+const gameFrameWidth = gameFrame.offsetWidth;
 
-        }
+setInterval(() => {
+    const randTop = Math.random() * (contHeight - 100);
+    const randLeft = Math.random() * (contWidth - 100);
 
-//Shooting function//
+    zombies.style.position = "absolute";
+    zombies.style.top = randTop + "px";
+    zombies.style.position = randLeft + "px";
 
-function shoot(zombie){
-//alert("boom!"); -- this function works, going to keep for reminder//
-zombie.classList.add("dead");
+}, 1000);
 
-}
 
-//zoombie attacking me//
-function zombieAttacksMe(zombie){
-    zombie.classList.add ("showing");
-    setTimeout(  ()=> {
-        zombie.classList.remove("showing")
-    }, 3000);
+let score = 0;
 
-    }
 
-    var zombie = document.querySelector("#zombie1")
-    zombieAttacksMe(zombie1);
+button.addEventListener('click',() => {
+gameFrame.appendChild(zombie);
+});
