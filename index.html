@@ -11,29 +11,24 @@
 </head>
 
 <body> 
-  <h1 class="glow" id="">WANT TO PLAY</h1>
+  <h1 class="glow" id="">KILL THE ZOMBIE</h1>
 
-  <main id="gameFrame" class="roundOne" onclick="myShootingEffects()"></main>
+  <div id="healthBar"></div>
 
+  <main id="gameFrame" class="roundOne" onclick="myShootingEffects()">
 
- <div id="zombieContainer">
-  <div class="zombie" id="zombieOne" onclick="shoot (this)"></div>
-  <div class="zombie" id="zombieTwo" onclick="shoot (this)"></div>
-  <div class="zombie" id="zombieThree"onclick="shoot (this)"></div>
-  <div class="zombie" id="zombieFour"onclick="shoot (this)"></div>
-</div>
-           
-<!--<button onclick="newGame()" id="newGame">
-<span class="winPopup">You WIN</span>
-<span class="loosePopup">You LOST</span>
-<span class="welcomeMessage">Kill the Zoombies</span>
+  <div class="zombie" onclick="shoot (this)"></div>
+  <div class="zombie" onclick="shoot (this)"></div>
+  <div class="zombie" onclick="shoot (this)"></div>
+  <div class="zombie" onclick="shoot (this)"></div>
 
-<p>New Game</p>
-
-</button> -->
-              
+         
 </main>
 
+
+<div class="container">
+  <button type="button" class="button">START</button>
+</div>
         <script src="main.js" async defer></script>
     </body>
 </html>
