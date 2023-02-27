@@ -1,3 +1,4 @@
+/******** My glowing stuff ******************/
 .glow {
     font-size: 80px;
     color: #fff;
@@ -20,19 +21,22 @@
     margin: 0;
     box-sizing: border-box;
 }
+/***********************************************************/
 
 body{
     background-color: #5b2d80;
     text-align: center;
 }
+/***********************************************************/
 
+/******** Main Container *********************************/
 #gameFrame {
 	height: 600px;
 	width: 800px;
 	margin: auto;
-	overflow: hidden;
 	position: relative;
 	background-color: #331667;
+    overflow: hidden;
 }
 
 #gameFrame {
@@ -40,7 +44,6 @@ body{
 	cursor: crosshair;
 	user-select: none;
 	border-radius: 10px;
-	color: coral;
 	box-shadow: inset 0 -200px 50px #81a2a740, inset 0 100px 80px #11111140;	
 }
 
@@ -82,6 +85,8 @@ body{
 	transition: all .5s;
     z-index: 10;
     right:  400px;
+    
+
 }
 
 .zombie {
@@ -128,6 +133,11 @@ body{
 
 .zombie.dead {
 	filter: blur(2px) brightness(.5);	
+    transform: rotate(-90deg);
+	transform-origin: bottom left;
+	bottom: -13%;
+	background-color: white;
+	margin-left: 20%;
 }
 
 /* Ennemy's dead face */
@@ -144,14 +154,6 @@ body{
 
 .zombie.shooting {
 	background-color: #2D1810;
-}
-
-.zombie .dead {
-	transform: rotate(-90deg);
-	transform-origin: bottom left;
-	bottom: -13%;
-	background-color: white;
-	margin-left: 20%;
 }
 
 
@@ -178,6 +180,7 @@ body{
 
 
 
+/*************************** The Button to Start a New Round ******************************/
 
 .button{
     color: white;
@@ -186,6 +189,18 @@ body{
     padding: 15px 45px;
     font-size: 1.1rem;
     outline: none;
-   
-
 }
+
+/************************** Player One Score Bar **********************************/
+
+.scoreBar{
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background-color: chartreuse;
+    transition: width .5s;
+}
+#zombie1, #zombie2, #zombie3, #zombie4{
+    display: none;
+}
+
