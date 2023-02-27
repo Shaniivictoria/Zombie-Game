@@ -13,21 +13,21 @@
 <body> 
   <h1 class="glow" id="">KILL THE ZOMBIE</h1>
 
-  <div id="healthBar"></div>
+  <div id="scoreBar"></div>
 
-  <main id="gameFrame" class="roundOne" onclick="myShootingEffects()">
+  <main id="gameFrame" class="roundOne">
 
-  <div class="zombie" onclick="shoot (this)"></div>
-  <div class="zombie" onclick="shoot (this)"></div>
-  <div class="zombie" onclick="shoot (this)"></div>
-  <div class="zombie" onclick="shoot (this)"></div>
 
+  <div id = "zombie1" class="zombie" > </div>
+  <div id = "zombie2" class="zombie" ></div>
+  <div id = "zombie3" class="zombie" ></div>
+  <div id = "zombie4" class="zombie" ></div>
          
 </main>
 
 
 <div class="container">
-  <button type="button" class="button">START</button>
+  <button id="startButton" type="button" class="button">START</button>
 </div>
         <script src="main.js" async defer></script>
     </body>
