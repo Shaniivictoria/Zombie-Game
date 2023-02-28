@@ -20,6 +20,12 @@ My motivation behind building this project was to learn how to use more of the J
  If you shoot the zombie then the next zombie comes up, and will continue 4 times. 
  Then you will and Game over. 
  
+
+Functions that don't work:
+ I am currently trying to make the zombies shoot me back. Been learning what methods to use to stimulate it. 
+ I also need to figure out how to get the score board up and the life bar.
+ Still a couple perks to fix
+
  Very easy simple game to create. A beginers game. 
  
  Hope you like. <3
